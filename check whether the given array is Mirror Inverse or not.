@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class ArrayImageCreator {
+   public static void main(String[] args) {
+	processImageArray();
+   }
+
+   static void processImageArray() {
+	// initialize reader
+	Scanner reader = new Scanner(System.in);
+	System.out.println("Enter the number of rows");
+	// read the number of rows in array
+	int rowCount = reader.nextInt();
+	System.out.println("Enter number of columns");
+	// read the number of columns in array
+	int columnCount = reader.nextInt();
+	// create array
+	int[][] array = new int[rowCount][columnCount];
+	System.out.println("Starting input of array elements...\n");
+	// loop to read array elements
+	for (int i = 0; i = 0; column--) {
+		// get element at current row and column
+		int element = array[row][column];
+		// assign element to the image array
+		mirrorImage[row][imageColumn] = element;
+		// increment the image array column counter
+		imageColumn++;
+	}
+   }
+	System.out.println("Mirror image of array is : ");
+	// display image array
+	displayArray(mirrorImage);
+
+   }
+
+   /**
+       * Displays the contents of the array received as parameter
+       * 
+       * @param array
+       */
+   static void displayArray(int[][] array) {
+	for (int i = 0; i 
